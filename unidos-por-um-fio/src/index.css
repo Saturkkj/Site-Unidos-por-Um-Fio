@@ -1,0 +1,225 @@
+/* Importações do Tailwind */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Estilos globais */
+:root {
+  --purple-primary: #B000FF;
+  --purple-dark: #4D0B88;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-dark);
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  background-image: url('unidos-por-um-fio/src/assets/imagem_2024-11-04_194515997 (1).png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Isso faz a imagem ficar fixa durante a rolagem */
+  background-repeat: no-repeat;
+}
+
+/* Adicione um overlay escuro para melhorar a legibilidade */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Ajuste a opacidade mudando o último valor (0.6) */
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, var(--purple-dark), var(--purple-primary));
+  padding: 15px 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: white;
+}
+
+.phone-number {
+  color: white;
+  font-size: 1rem;
+}
+
+.social-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o texto e o ícone */
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.social-icon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-inscreva-se {
+  background-color: white;
+  color: var(--purple-primary);
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-inscreva-se:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .contact-wrapper {
+    gap: 15px;
+  }
+
+  .phone-number,
+  .social-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 500px; /* Reduzido de 600px para 400px */
+  display: flex;
+  align-items: center;
+  padding: 30px 90px; /* Reduzido padding */
+}
+
+.hero-content {
+  flex: 1;
+  color: white;
+  max-width: 500px; /* Reduzido de 600px */
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-image {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%; /* Reduzido de 60% */
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About section */
+.about {
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple-primary));
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: white;
+  font-size: 32px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.4;
+}
+
+.btn-conheca-mais {
+  background-color: #FF9100;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Donation Options */
+.donation-options {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #3B3B5C;
+}
+
+.option {
+  text-align: center;
+  width: 40%;
+}
+
+.option h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn-doar,
+.btn-empresa {
+  background-color: var(--purple-primary);
+  color: white;
+  padding: 10px 20px;
+  margin: 70px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Partners Section */
+.partners {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--background-dark);
+}

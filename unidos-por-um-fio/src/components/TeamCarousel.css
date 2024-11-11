@@ -1,0 +1,81 @@
+.carousel-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .carousel-container .slick-slide {
+    padding: 0 10px;
+    transition: all 0.3s ease;
+  }
+   
+  .carousel-container .slick-slide div {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-container .slick-prev,
+  .carousel-container .slick-next {
+    z-index: 1;
+  }
+  
+  .carousel-container .slick-prev {
+    left: -25px;
+  }
+  
+  .carousel-container .slick-next {
+    right: -25px;
+  }
+  
+  .carousel-container .slick-prev:before,
+  .carousel-container .slick-next:before {
+    color: #B000FF;
+    font-size: 24px;
+  }
+  
+  .carousel-container .slick-dots {
+    bottom: -25px;
+  }
+  
+  .carousel-container .slick-dots li button:before {
+    color: #B000FF;
+  }
+  
+  /* Estilo base para todas as imagens */
+  .carousel-container .slick-slide img {
+    width: 200px;  /* Largura fixa */
+    height: 200px; /* Altura fixa igual à largura para formato quadrado */
+    object-fit: cover;
+    margin: 0 auto;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    border-radius: 8px; /* Cantos levemente arredondados, remova se preferir quadrado perfeito */
+  }
+  
+  /* Estilo para a imagem central */
+  .carousel-container .slick-center img {
+    width: 250px;  /* Largura maior para a imagem central */
+    height: 250px; /* Altura igual à largura */
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(176, 0, 255, 0.5);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .carousel-container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+    
+    .carousel-container .slick-slide img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .carousel-container .slick-center img {
+      width: 200px;
+      height: 200px;
+    }
+  }
