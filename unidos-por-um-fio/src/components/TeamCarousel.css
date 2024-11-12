@@ -6,7 +6,7 @@
   
   .carousel-container .slick-slide {
     padding: 0 10px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
   }
    
   .carousel-container .slick-slide div {
@@ -44,22 +44,22 @@
   
   /* Estilo base para todas as imagens */
   .carousel-container .slick-slide img {
-    width: 200px;  /* Largura fixa */
-    height: 200px; /* Altura fixa igual à largura para formato quadrado */
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     margin: 0 auto;
     opacity: 0.7;
-    transition: all 0.3s ease;
-    border-radius: 8px; /* Cantos levemente arredondados, remova se preferir quadrado perfeito */
+    transition: all 0.2s ease;
+    border-radius: 8px;
   }
   
   /* Estilo para a imagem central */
   .carousel-container .slick-center img {
-    width: 250px;  /* Largura maior para a imagem central */
-    height: 250px; /* Altura igual à largura */
+    width: 250px;
+    height: 250px; 
     opacity: 1;
-    transform: scale(1.1);
     box-shadow: 0 0 15px rgba(176, 0, 255, 0.5);
+    border-radius: 8px;
   }
   
   /* Responsividade */
