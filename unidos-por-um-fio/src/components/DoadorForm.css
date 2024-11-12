@@ -44,18 +44,18 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
-  color: #333; /* Cor do texto digitado */
-  font-weight: 500; /* Deixa a fonte um pouco mais grossa */
+  color: #333;
+  font-weight: 500;
 }
 
 .form-input::placeholder {
-  color: #999; /* Cor do texto placeholder */
+  color: #999;
 }
 
 .form-input:focus {
   border-color: var(--purple-primary);
   outline: none;
-  box-shadow: 0 0 0 2px rgba(176, 0, 255, 0.1); /* Leve sombra roxa quando selecionado */
+  box-shadow: 0 0 0 2px rgba(176, 0, 255, 0.1);
 }
 
 .form-buttons {
@@ -116,4 +116,31 @@
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.form-input.error {
+  border-color: #dc3545;
+  background-color: #fff8f8;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.loading-message {
+  color: var(--purple-primary);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

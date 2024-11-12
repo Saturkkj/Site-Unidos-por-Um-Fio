@@ -3,7 +3,7 @@ import TeamCarousel from './components/TeamCarousel';
 import DoadorForm from './components/DoadorForm';
 import EmpresaForm from './components/EmpresaForm';
 import SelectTypeModal from './components/SelectTypeModal';
-import { Instagram } from 'lucide-react'; // Importando o ícone
+import { Instagram } from 'lucide-react';
 
 function App() {
   const [showDoadorForm, setShowDoadorForm] = useState(false);
