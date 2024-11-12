@@ -1,5 +1,5 @@
 import React from 'react';
-import './DoadorForm.css'; // Reaproveitando os estilos
+import './DoadorForm.css';
 
 const SelectTypeModal = ({ onClose, onSelectDoador, onSelectEmpresa }) => {
   return (
