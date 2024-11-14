@@ -24,7 +24,7 @@ function App() {
     <>
       <header className="header">
         <div className="header-content">
-          <img src="unidos-por-um-fio/src/assets/Imagem1.png" className="logo" alt="Logo Unidos por Um Fio" />
+          <img src="/assets/Imagem1.png" className="logo" alt="Logo Unidos por Um Fio" />
           <div className="contact-wrapper">
             <span className="phone-number">(11) 99999-9999</span>
             <div className="social-link-wrapper">
@@ -53,7 +53,7 @@ function App() {
             </p>
           </div>
           <div className="hero-image">
-            <img src="unidos-por-um-fio/src/assets/imagem_2024-11-04_200610820 (1).png" alt="Imagem relacionada" />
+            <img src="/assets/imagem_2024-11-04_200610820 (1).png" alt="Imagem relacionada" />
           </div>
         </div>
       </section>

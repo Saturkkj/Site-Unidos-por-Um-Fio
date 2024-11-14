@@ -15,7 +15,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
-  background-image: url('unidos-por-um-fio/src/assets/imagem_2024-11-04_194515997 (1).png');
+  background-image: url('/assets/imagem_2024-11-04_194515997 (1).png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -152,7 +152,7 @@ body::before {
 .hero-image {
   position: absolute;
   right: 15%;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   width: 50%;
 }

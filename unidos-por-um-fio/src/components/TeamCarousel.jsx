@@ -6,11 +6,11 @@ import './TeamCarousel.css';
 
 const TeamCarousel = () => {
   const teamMembers = [
-    { id: 1, image: 'unidos-por-um-fio/src/assets/WhatsApp Image 2024-05-21 at 21.12.12.jpeg' },
-    { id: 2, image: 'unidos-por-um-fio/src/assets/WhatsApp Image 2024-05-21 at 21.14.01.jpeg' },
-    { id: 3, image: 'unidos-por-um-fio/src/assets/IMG_20241013_181718_982.jpg' },
-    { id: 4, image: 'unidos-por-um-fio/src/assets/SaveClip.App_449858196_816211557147928_122574603477745659_n.jpg' },
-    { id: 5, image: 'unidos-por-um-fio/src/assets/file.jpg' }
+    { id: 1, image: '/assets/WhatsApp Image 2024-05-21 at 21.12.12.jpeg' },
+    { id: 2, image: '/assets/WhatsApp Image 2024-05-21 at 21.14.01.jpeg' },
+    { id: 3, image: '/assets/IMG_20241013_181718_982.jpg' },
+    { id: 4, image: '/assets/SaveClip.App_449858196_816211557147928_122574603477745659_n.jpg' },
+    { id: 5, image: '/assets/file.jpg' }
   ];
 
   const settings = {
